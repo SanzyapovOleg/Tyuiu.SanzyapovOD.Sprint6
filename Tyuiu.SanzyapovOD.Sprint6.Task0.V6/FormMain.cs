@@ -16,7 +16,14 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task0.V6
         private void button2_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
-            textBox5.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBox3.Text)));
+            try
+            {
+                textBox5.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBox3.Text)));
+            }
+            catch
+            {
+                MessageBox.Show("¬ведены неверные данные", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-namespace Tyuiu.SanzyapovOD.Sprint6.Task0.V6
+namespace Tyuiu.SanzyapovOD.Sprint6.Task1.V10
 {
     internal static class Program
     {
@@ -7,7 +7,7 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task0.V6
         /// </summary>
         [STAThread]
         static void Main()
-       {
+        {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
