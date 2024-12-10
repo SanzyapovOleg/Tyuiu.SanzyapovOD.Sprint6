@@ -10,23 +10,23 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task7.V9.Lib
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
             int rows = lines.Length;
             int columns = lines[0].Split(';').Length;
-            int[,] arrayValues = new int[rows, columns];
+            int[,] matrix = new int[rows, columns];
             for (int r = 0; r < rows; r++)
             {
                 string[] line_r = lines[r].Split(';');
                 for (int c = 0; c < columns; c++)
                 {
-                    arrayValues[r, c] = Convert.ToInt32(line_r[c]);
+                    matrix[r, c] = Convert.ToInt32(line_r[c]);
                 }
             }
             for (int r = 0; r < rows; r++)
             {
-                if (arrayValues[r, 3] != 1 && arrayValues[r, 3] != 2 && arrayValues[r, 3] != 3 && arrayValues[r, 3] != 4 && arrayValues[r, 3] != 5)
+                if (matrix[r, 2] >= 1 && matrix[r, 2] <= 5)
                 {
-                    arrayValues[r, 3] = 7;
+                    matrix[r, 2] = 7;
                 }
             }
-            return arrayValues;
+            return matrix;
         }
     }
 }
