@@ -1,4 +1,5 @@
-﻿namespace Tyuiu.SanzyapovOD.Sprint6.Task1.V10
+﻿using Tyuiu.SanzyapovOD.Sprint6.Task2.V14.Lib;
+namespace Tyuiu.SanzyapovOD.Sprint6.Task2.V14
 {
     partial class FormMain
     {
@@ -37,9 +38,6 @@
             textBoxVarStart_TDA = new TextBox();
             groupBoxOutput_TDA = new GroupBox();
             labelResult_TDA = new Label();
-            textBoxResult_TDA = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
             groupBoxMain_TDA.SuspendLayout();
             groupBoxInput_TDA.SuspendLayout();
             groupBoxOutput_TDA.SuspendLayout();
@@ -92,9 +90,9 @@
             // 
             // textBoxVarEnd_TDA
             // 
-            textBoxVarEnd_TDA.Location = new Point(239, 44);
+            textBoxVarEnd_TDA.Location = new Point(263, 44);
             textBoxVarEnd_TDA.Name = "textBoxVarEnd_TDA";
-            textBoxVarEnd_TDA.Size = new Size(204, 23);
+            textBoxVarEnd_TDA.Size = new Size(180, 23);
             textBoxVarEnd_TDA.TabIndex = 2;
             // 
             // labelVarStart_TDA
@@ -108,16 +106,15 @@
             // 
             // textBoxVarStart_TDA
             // 
-            textBoxVarStart_TDA.Location = new Point(6, 44);
+            textBoxVarStart_TDA.Location = new Point(24, 44);
+            textBoxVarStart_TDA.Multiline = true;
             textBoxVarStart_TDA.Name = "textBoxVarStart_TDA";
-            textBoxVarStart_TDA.Size = new Size(204, 23);
-            textBoxVarStart_TDA.TabIndex = 0;
-            textBoxVarStart_TDA.TextChanged += textBoxVarStart_TDA_TextChanged;
+            textBoxVarStart_TDA.Size = new Size(166, 23);
+            textBoxVarStart_TDA.TabIndex = 4;
             // 
             // groupBoxOutput_TDA
             // 
             groupBoxOutput_TDA.Controls.Add(labelResult_TDA);
-            groupBoxOutput_TDA.Controls.Add(textBoxResult_TDA);
             groupBoxOutput_TDA.Location = new Point(473, 12);
             groupBoxOutput_TDA.Name = "groupBoxOutput_TDA";
             groupBoxOutput_TDA.Size = new Size(248, 346);
@@ -134,48 +131,11 @@
             labelResult_TDA.TabIndex = 1;
             labelResult_TDA.Text = "Результат:";
             // 
-            // textBoxResult_TDA
-            // 
-            textBoxResult_TDA.BackColor = SystemColors.ControlLightLight;
-            textBoxResult_TDA.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBoxResult_TDA.Location = new Point(6, 44);
-            textBoxResult_TDA.Multiline = true;
-            textBoxResult_TDA.Name = "textBoxResult_TDA";
-            textBoxResult_TDA.ReadOnly = true;
-            textBoxResult_TDA.ScrollBars = ScrollBars.Vertical;
-            textBoxResult_TDA.Size = new Size(242, 284);
-            textBoxResult_TDA.TabIndex = 0;
-            textBoxResult_TDA.TextChanged += textBoxResult_TDA_TextChanged;
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI", 20F);
-            button1.Location = new Point(6, 364);
-            button1.Name = "button1";
-            button1.Size = new Size(151, 45);
-            button1.TabIndex = 3;
-            button1.Text = "?";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Segoe UI", 14F);
-            button2.Location = new Point(163, 364);
-            button2.Name = "button2";
-            button2.Size = new Size(151, 45);
-            button2.TabIndex = 4;
-            button2.Text = "Выполнить";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(733, 411);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(groupBoxOutput_TDA);
             Controls.Add(groupBoxInput_TDA);
             Controls.Add(groupBoxMain_TDA);
@@ -199,13 +159,10 @@
         private GroupBox groupBoxInput_TDA;
         private GroupBox groupBoxOutput_TDA;
         private Label labelResult_TDA;
-        private TextBox textBoxResult_TDA;
         private TextBox textBoxVarStart_TDA;
         private Label labelVarStart_TDA;
         private TextBox textBoxCondition_TDA;
         private Label labelVarEnd_TDA;
         private TextBox textBoxVarEnd_TDA;
-        private Button button1;
-        private Button button2;
     }
 }

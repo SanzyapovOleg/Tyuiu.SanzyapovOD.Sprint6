@@ -1,4 +1,4 @@
-using Tyuiu.SanzyapovOD.Sprint6.Task1.V10.Lib;
+п»їusing Tyuiu.SanzyapovOD.Sprint6.Task1.V10.Lib;
 namespace Tyuiu.SanzyapovOD.Sprint6.Task1.V10
 {
     public partial class FormMain : System.Windows.Forms.Form
@@ -15,7 +15,7 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task1.V10
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнил студент группы ИСТНб-24-1 Санзяпов Олег Дмитриевич", "Сообщение", MessageBoxButtons.OK);
+            MessageBox.Show("РўР°СЃРє 1 РІС‹РїРѕР»РЅРёР» СЃС‚СѓРґРµРЅС‚ РіСЂСѓРїРїС‹ РРЎРўРќР±-24-1 РЎР°РЅР·СЏРїРѕРІ РћР»РµРі Р”РјРёС‚СЂРёРµРІРёС‡", "РЎРѕРѕР±С‰РµРЅРёРµ", MessageBoxButtons.OK);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task1.V10
             }
             catch
             {
-                MessageBox.Show("??????? ???????? ??????", "??????", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Г‚ГўГҐГ¤ГҐГ­Г» Г­ГҐГўГҐГ°Г­Г»ГҐ Г¤Г Г­Г­Г»ГҐ", "ГЋГёГЁГЎГЄГ ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         
         }
