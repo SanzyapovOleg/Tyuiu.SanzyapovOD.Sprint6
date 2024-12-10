@@ -5,21 +5,17 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task6.V30.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string resStr = "";
-            using (StreamReader reader = new StreamReader(path))
+            string res = "";
+            string[] strPath = File.ReadAllLines(path);
+            for (int i = 0; i < strPath.Length; i++)
             {
-                while (!reader.EndOfStream)
+                string[] lastStr = strPath[i].Split(' ');
+                if (lastStr.Length >= 2)
                 {
-                    string line = reader.ReadLine();
-                    string[] words = line.Split(' ');
-                    if (words.Length >= 4)
-                    {
-
-                        resStr += words[3] + " ";
-                    }
+                    res = res + " " + lastStr[3];
                 }
             }
-            return resStr;
+            return res;
         }
     }
 }
