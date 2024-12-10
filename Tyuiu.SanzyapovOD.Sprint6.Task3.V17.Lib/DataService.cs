@@ -5,16 +5,15 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task3.V17.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            int rows = matrix.GetLength(0);
-            int[] columnValues = new int[rows];
-            for (int i = 0; i < rows; i++)
+            int[] column = new int[matrix.GetLength(0)];
+            for (int i = 0; i < matrix.GetLength(0); ++i)
             {
-                columnValues[i] = matrix[i, 4];
+                column[i] = matrix[i, 3];
             }
-            Array.Sort(columnValues);
-            for (int i = 0; i < rows; i++)
+            Array.Sort(column);
+            for (int i = 0; i < matrix.GetLength(0); ++i)
             {
-                matrix[i, 4] = columnValues[i];
+                matrix[i, 3] = column[i];
             }
             return matrix;
         }
