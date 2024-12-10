@@ -12,7 +12,7 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task6.V30.Lib
                 string[] lastStr = strPath[i].Split(' ');
                 if (lastStr.Length >= 2)
                 {
-                    res = res + " " + lastStr[3];
+                    res = res + "" + lastStr[3];
                 }
             }
             return res;
