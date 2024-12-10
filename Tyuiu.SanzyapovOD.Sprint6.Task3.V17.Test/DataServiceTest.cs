@@ -19,7 +19,6 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task3.V17.Test
                             { 21, 17, -8, -19, 25 },
                             { 8, 22, 28, 27, 27 },
                             { 11, 20, 12, 27, 29 } };
-
             CollectionAssert.AreEqual(wait, res);
         }
     }

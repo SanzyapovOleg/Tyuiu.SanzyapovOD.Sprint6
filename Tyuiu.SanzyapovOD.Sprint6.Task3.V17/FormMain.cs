@@ -20,7 +20,6 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task3.V17
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox2.Text = Convert.ToString(ds.Calculate(mtrx));
             int rows = mtrx.GetUpperBound(0) + 1;
             int columns = mtrx.Length / rows;
 
@@ -36,6 +35,11 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task3.V17
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
