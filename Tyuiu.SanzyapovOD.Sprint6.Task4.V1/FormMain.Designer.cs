@@ -103,6 +103,7 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task4.V1
             button1.TabIndex = 5;
             button1.Text = "?";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 

@@ -16,5 +16,10 @@ namespace Tyuiu.SanzyapovOD.Sprint6.Task4.V1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
